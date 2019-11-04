@@ -24,6 +24,8 @@ export default function Dashboard() {
     alert('Success! Your Event Id is, ' + id)
     setEventID(id);
 
+    console.log('createEvent', id);
+    
     db.ref('events/' + id).set({
       location: "",
     })
