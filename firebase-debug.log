@@ -1,0 +1,22 @@
+[debug] [2019-11-04T04:25:14.034Z] ----------------------------------------------------------------------
+[debug] [2019-11-04T04:25:14.035Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only hosting
+[debug] [2019-11-04T04:25:14.035Z] CLI Version:   7.6.2
+[debug] [2019-11-04T04:25:14.035Z] Platform:      darwin
+[debug] [2019-11-04T04:25:14.035Z] Node Version:  v10.16.3
+[debug] [2019-11-04T04:25:14.036Z] Time:          Sun Nov 03 2019 22:25:14 GMT-0600 (Central Standard Time)
+[debug] [2019-11-04T04:25:14.036Z] ----------------------------------------------------------------------
+[debug] [2019-11-04T04:25:14.036Z] 
+[debug] [2019-11-04T04:25:14.043Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-04T04:25:14.043Z] > authorizing via signed-in user
+[debug] [2019-11-04T04:25:14.043Z] [iam] checking project quick-travis-b57e9 for permissions ["firebase.projects.get"]
+[debug] [2019-11-04T04:25:14.044Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/quick-travis-b57e9:testIamPermissions  
+
+[debug] [2019-11-04T04:25:14.196Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-04T04:25:14.198Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/quick-travis-b57e9  
+ 
+[debug] [2019-11-04T04:25:14.449Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-04T04:25:14.451Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/quick-travis-b57e9/webApps/-/config  
+ 
+[debug] [2019-11-04T04:25:14.790Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: build
+[info] ✔  hosting: Local server: http://localhost:5000
