@@ -36,7 +36,6 @@ export default function Dashboard() {
       Seafood: 0,
       Italian: 0,
     })
-
     db.ref('events/' + id).child('price').set({
       1: 0,
       2: 0,
