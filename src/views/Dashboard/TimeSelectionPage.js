@@ -37,13 +37,13 @@ export default function TimeSelectionPage({ restaurantHours, stateOpenTimeSelect
     //db.ref('events/' + id).child('confirmedTime').set(stateConfirmedTime.confirmedTime);
   };
 
-  const getDays = () => {
+ /*  const getDays = () => {
 
   };
 
   const getHours = () => {
 
-  };
+  }; */
 
   return (
     <Dialog
