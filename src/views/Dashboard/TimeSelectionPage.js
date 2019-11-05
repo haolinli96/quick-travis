@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import Calendar from '../UserProfile/Calendar.jsx';
 import Dialog from '@material-ui/core/Dialog';
