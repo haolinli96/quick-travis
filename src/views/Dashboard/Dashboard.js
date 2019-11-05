@@ -61,7 +61,7 @@ export default function Dashboard() {
   }
 
   const handleFindEvent = (eventid) => {
-    if (Object.keys(eventid).length == 0) {
+    if (Object.keys(eventid).length === 0) {
       alert("Please type in a valid event ID")
     } else {
       setHasId(true);

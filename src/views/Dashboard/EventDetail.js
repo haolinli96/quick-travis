@@ -91,7 +91,7 @@ export default function EventDetail({id}) {
 
       const firebasePriceSelection = event.price;
       const initialPriceSelection = [];
-      for (var i = 0; i < PriceList.length; i++) {
+      for (i = 0; i < PriceList.length; i++) {
         if (firebasePriceSelection[i + 1] > 0) {
           initialPriceSelection.push(i);
         }
