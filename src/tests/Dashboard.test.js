@@ -9,7 +9,14 @@ import { get } from 'http';
 test('creat a new event', async () => {
     const jsdomAlert = window.alert;
     window.alert = () => {};
-    const { getByText } = render(<Dashboard />)
+
+
+    const creatingEventTest = jest.fn();
+
+    const { getByText } = render(
+    <Dashboard 
+    creatingEventTest={creatingEventTest}
+    />)
 
     expect(getByText('Create New Event')).toBeInTheDocument()
 
@@ -17,7 +24,7 @@ test('creat a new event', async () => {
 
     //const alert = await findByRole('alert')
 
-    //expect(alert).toHaveTextContent(/success/i)
-    //expect(handleCreatingEvent).toHaveBeenCalled(1)
+    //expect(jsdomAlert).toHaveTextContent(/success/i)
+    expect(creatingEventTest).toHaveBeenCalledTimes(1)
     //expect(setHasID).toBeCalledWith(false)
 })
