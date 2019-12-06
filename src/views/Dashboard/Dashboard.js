@@ -22,7 +22,7 @@ export default function Dashboard({ creatingEventTest }) {
     //creating new events in firebase
     const id = Math.random().toString(36).substr(2, 9)
     //alert('Success! Your Event Id is, ' + id)
-    //creatingEventTest(id); travis
+    creatingEventTest(id); //travis
     setEventID(id);
 
     console.log('createEvent', id);
