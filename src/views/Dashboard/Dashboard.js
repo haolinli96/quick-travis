@@ -74,7 +74,7 @@ export default function Dashboard({ creatingEventTest }) {
   if (!hasId) {
     return (
       <div>
-      <Button color='rose' onClick={handleCreatingEvent}>Create New Event</Button>
+      <Button data-cy="create" color='rose' onClick={handleCreatingEvent}>Create New Event</Button>
       <FindEventTextField eventID={eventID} setEventID={setEventID}></FindEventTextField>
       <Button color='primary' onClick={() => handleFindEvent(eventID)}>Find Event</Button>
       </div>
