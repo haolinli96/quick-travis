@@ -250,7 +250,7 @@ export default function EventDetail({id}) {
       />
       </GridItem>
       <GridItem xs={12} sm={12} md={12} className={classes.buttons}>
-        <Button onClick={handleRecommendationClick} className={classes.button} type="button" >Get Your Recommendations</Button>
+        <Button data-cy="recommendation" onClick={handleRecommendationClick} className={classes.button} type="button" >Get Your Recommendations</Button>
       </GridItem>
       <Grid container spacing={3}>
     { restaurants && restaurants.slice(0,6).map(restaurant =>
