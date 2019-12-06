@@ -26,8 +26,8 @@
     "react-swipeable-views": "0.13.3"
   },
   "scripts": {
-"cypress:ci": "cypress run --config video=false",
-    "test:ci": "react-scripts test --watchAll=false && start-server-and-test start http://localhost:3001 cypress:ci",
+ "cypress:ci": "cypress run --config video=false",
+    "test:ci": "react-scripts test --watchAll=false && start-server-and-test start http://localhost:3000 cypress:ci",
     "cypress:open": "cypress open",
     "start": "react-scripts start",
     "build": "react-scripts build",

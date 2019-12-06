@@ -13,7 +13,7 @@ export const apiKey =
 
 const db = app.database();
 
-export default function Dashboard({ creatingEventTest }) {
+export default function Dashboard() {
   // const [hasId, setHasId] = useState(localStorage.getItem('renderSurvey'));
   const [hasId, setHasId] = useState(false);
   const [eventID, setEventID] = useState();
@@ -22,7 +22,7 @@ export default function Dashboard({ creatingEventTest }) {
     //creating new events in firebase
     const id = Math.random().toString(36).substr(2, 9)
     //alert('Success! Your Event Id is, ' + id)
-    creatingEventTest(id); //travis
+    //creatingEventTest(id); //travis
     setEventID(id);
 
     console.log('createEvent', id);
