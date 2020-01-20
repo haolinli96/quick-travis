@@ -24,7 +24,6 @@ export default function CustomInput(props) {
     inputProps,
     error,
     success,
-    setInputState
   } = props;
 
   const labelClasses = classNames({
@@ -60,7 +59,6 @@ export default function CustomInput(props) {
           underline: underlineClasses
         }}
         id={id}
-        onChange={(event)=>(setInputState(event.target.value))}
         {...inputProps}
       />
       {error ? (
@@ -79,6 +77,5 @@ CustomInput.propTypes = {
   inputProps: PropTypes.object,
   formControlProps: PropTypes.object,
   error: PropTypes.bool,
-  success: PropTypes.bool,
-  setInputState: PropTypes.func
+  success: PropTypes.bool
 };

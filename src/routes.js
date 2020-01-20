@@ -26,7 +26,7 @@ import DashboardPage from "views/Dashboard/Dashboard.js";
 import Events from "views/Events/Events.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
 import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
-import Register from "views/Register/Register.jsx";
+import Register from "views/Register/Register.js";
 // core components/views for RTL layout
 
 const dashboardRoutes = [
