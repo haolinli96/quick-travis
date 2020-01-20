@@ -20,11 +20,13 @@ import Dashboard from "@material-ui/icons/Dashboard";
 import Food from "@material-ui/icons/Fastfood";
 import Person from "@material-ui/icons/Person";
 import Unarchive from "@material-ui/icons/Unarchive";
+import ContactMailIcon from '@material-ui/icons/ContactMail';
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.js";
 import Events from "views/Events/Events.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
 import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
+import Register from "views/Register/Register.jsx";
 // core components/views for RTL layout
 
 const dashboardRoutes = [
@@ -54,6 +56,13 @@ const dashboardRoutes = [
     name: "Settings",
     icon: Unarchive,
     component: UpgradeToPro,
+    layout: "/admin"
+  },
+  {
+    path: "/register",
+    name: "Register",
+    icon: ContactMailIcon,
+    component: Register,
     layout: "/admin"
   }
 ];
